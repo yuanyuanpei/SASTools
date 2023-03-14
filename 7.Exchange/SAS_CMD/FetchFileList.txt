@@ -1,0 +1,7 @@
+dir "." /B > FolderList.txt
+
+dir /s/b * > AllFileList.txt
+
+dir /s/b *.xlsx > SpecialFileList.txt
+
+*Save and change suffix to .bat, double click the .bat file.
