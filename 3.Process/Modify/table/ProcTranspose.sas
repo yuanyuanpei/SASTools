@@ -1,0 +1,12 @@
+*functions;
+proc transpose data=tmp1 out=tmp2(drop=_NAME_ _LABEL_);
+by subjectno maxsvdate;
+var instance ;
+run;
+*SDTM datasets;
+	proc transpose data=SUPP&ds. out=NEW_SUPP&ds.;
+	by usubjid rdomain idvar idvarval;
+	var qval;
+	id qnam;
+	idlabel qlabel;
+	run;
