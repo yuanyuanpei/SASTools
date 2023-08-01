@@ -1,2 +1,2 @@
 # SAS codes
-Arrangement of currently used SAS blocks in work.
+Arrangement of currently used SAS blocks.
