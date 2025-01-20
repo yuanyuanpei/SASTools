@@ -1,0 +1,11 @@
+Sub clearTitle()
+Dim i As Integer
+Dim num As Integer
+num = ThisWorkbook.Sheets.Count
+For i = 3 To num
+'删掉标题行（由sas的proc report步生成的title在excel里是前两行）
+Sheets(i).Rows("1:2").Delete Shift:=xlUp
+'清除所有单元格格式
+Sheets(i).Cells.ClearFormats
+Next
+End Sub
